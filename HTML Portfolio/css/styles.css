@@ -69,7 +69,7 @@ h2 {
 }
 
 .social-media img {
-    max-width: 40px; /* fixing the size of social media icons */
+    max-width: 40px; /* Limiting the size of social media icons */
 }
 
 .portfolio-items {
@@ -85,7 +85,12 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* new CSS styles for contact */
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* New CSS styles for the contact page */
 #contact-form {
     background-color: #fff;
     padding: 40px;
@@ -145,4 +150,33 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Media queries for mobile and tablet */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        max-width: 150px;
+    }
+
+    .portfolio-items {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-pic {
+        max-width: 100px;
+    }
 }
